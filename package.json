@@ -1,0 +1,45 @@
+{
+    "name": "my-meta-fi",
+    "version": "1.0.0",
+    "description": "MyMetFi is a project for buying and earning utilities through crowdfunding",
+    "scripts": {
+        "build": "yarn build:sol",
+        "test": "yarn test:sol:run",
+        "test:gas": "yarn test:sol:run --gas-report",
+        "build:sol": "forge build --extra-output storageLayout --via-ir",
+        "test:sol": "yarn build:sol && yarn test:sol:run",
+        "test:sol:run": "forge test --via-ir",
+        "coverage": "./node_modules/.bin/solidity-coverage"
+    },
+    "author": "Siya Kesarwani <siya.kesarwani@appinventiv.com>",
+    "license": "Unlicensed",
+    "devDependencies": {
+        "@nomiclabs/buidler": "^1.4.8",
+        "@nomiclabs/hardhat-ethers": "^2.0.2",
+        "@nomiclabs/hardhat-waffle": "^2.0.1",
+        "@openzeppelin/hardhat-upgrades": "^1.10.0",
+        "chai": "^4.3.4",
+        "ethereum-waffle": "^3.4.0",
+        "ethers": "^5.4.7",
+        "hardhat": "^2.17.3",
+        "hardhat-contract-sizer": "^2.10.0",
+        "web3": "^1.6.0"
+    },
+    "dependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+        "@nomiclabs/hardhat-etherscan": "^3.1.7",
+        "@openzeppelin/contracts": "^4.8.3",
+        "@openzeppelin/contracts-upgradeable": "^4.3.2",
+        "@rari-capital/solmate": "^6.4.0",
+        "@remix-project/remixd": "^0.6.17",
+        "@renft/sdk": "^6.0.0-alpha.7",
+        "axios": "^1.3.5",
+        "chokidar": "^3.5.3",
+        "commander": "^11.0.0",
+        "dotenv": "^16.0.3",
+        "fs-extra": "^11.1.1",
+        "solc": "^0.8.21",
+        "solidity-coverage": "^0.8.2",
+        "ws": "^8.14.1"
+    }
+}

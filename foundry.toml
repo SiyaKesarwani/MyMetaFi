@@ -1,0 +1,9 @@
+[profile.default]
+src = 'contracts'
+out = 'out'
+test = 'sol-tests'
+script = 'deploy'
+libs = ['lib']
+gas_reports = ['Proxy', 'SingleNFTCrowdfund', 'CollectionNFTCrowdfund', 'CollectiveCrowdfundFactory', 'CollectiveCrowdfundFactory', 'Distributor', 'CollectiveFactory', 'Collective']
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
