@@ -32,9 +32,9 @@ module.exports = {
       allowUnlimitedContractSize: true
     },
     hardhat: {
-      forking: {
-        url: `https://goerli.infura.io/v3/${process.env.INFURA_KEY}`
-      },
+      // forking: {
+      // url: `https://sepolia.infura.io/v3/${process.env.INFURA_KEY}`,
+      // },
       chainId: 1
     }
   },

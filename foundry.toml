@@ -5,5 +5,8 @@ test = 'sol-tests'
 script = 'deploy'
 libs = ['lib']
 gas_reports = ['Proxy', 'SingleNFTCrowdfund', 'CollectionNFTCrowdfund', 'CollectiveCrowdfundFactory', 'CollectiveCrowdfundFactory', 'Distributor', 'CollectiveFactory', 'Collective']
+via_ir = true
+optimizer = true
+optimizer_runs = 200
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
