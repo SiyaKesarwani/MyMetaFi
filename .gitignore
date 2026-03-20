@@ -1,0 +1,64 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.test
+
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Hardhat artifacts
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# Foundry artifacts
+out/
+build/
+
+# Test coverage
+coverage/
+lcov.info
+.nyc_output/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+.DS_Store
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+*.temp
+
+# OS specific
+Thumbs.db
+.env.production.local
+
+# Hardhat
+.hardhat/
+
+# Slither reports
+*.json.slither
+
+# Contracts size report
+.contracts.size
+
+# Remix
+remix-slither-report.json
